@@ -1,9 +1,12 @@
 {
   "name": "@sunamo/sunpm",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "test2": "jest",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,8 @@
     "url": "https://github.com/sunamo/sunpm/issues"
   },
   "homepage": "https://github.com/sunamo/sunpm#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
 }
