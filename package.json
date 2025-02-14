@@ -1,6 +1,6 @@
 {
   "name": "@sunamo/sunpm",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Shared package for npmjs.org with methods used in more projects.",
   "main": "./lib/index.js",
   "files": [
