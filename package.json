@@ -1,6 +1,6 @@
 {
   "name": "@sunamo/sunpm",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Shared package for npmjs.org with methods used in more projects.",
   "main": "./lib/index.js",
   "files": [
@@ -11,12 +11,12 @@
     "clean": "rm -rf ./lib/",
     "cm": "cz",
     "lint": "eslint ./src/ --fix",
-    "prepare2": "husky install",
+    "prepare": "husky install",
     "semantic-release": "semantic-release",
     "test:watch": "jest --watch",
     "test": "jest --coverage",
     "typecheck": "tsc --noEmit",
-    "publish": "cross-env HUSKY_SKIP_HOOKS=1 npm version patch -f && pnpm run build && npm publish"
+    "publish": "cross-env npm version patch -f && pnpm run build && npm publish"
   },
   "repository": {
     "type": "git",
