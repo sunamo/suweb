@@ -1,6 +1,6 @@
 {
   "name": "@sunamo/sunpm",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Shared package for npmjs.org with methods used in more projects.",
   "main": "./lib/index.js",
   "files": [
@@ -16,7 +16,7 @@
     "test:watch": "jest --watch",
     "test": "jest --coverage",
     "typecheck": "tsc --noEmit",
-    "publish": "cross-env npm version patch -f && pnpm run build && npm publish"
+    "run-publish": "cross-env npm version patch -f && pnpm run build && npm publish"
   },
   "repository": {
     "type": "git",
