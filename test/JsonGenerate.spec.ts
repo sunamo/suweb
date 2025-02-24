@@ -1,13 +1,15 @@
-import { projdiJsonRekurzivne } from "../src/JsonGenerate"
+import { toEveryPairNewValue } from "../src/JsonGenerate"
 import JsonGenerate from "./JsonGenerate.json"
+import JsonGenerate2 from "./JsonGenerate2.json"
 
 describe("JsonGenerate", () => {
-    it("projdiJsonRekurzivne", () => {
+    it("toEveryPairNewValue", () => {
         // Vytvoříme JSON objekt
-        const jsonObject = JsonGenerate
+        const jsonObject = JsonGenerate2
 
-        const result = projdiJsonRekurzivne(jsonObject)
+        const result = toEveryPairNewValue(jsonObject, "3", 111, ["ID"]);
         console.log("projdiJsonRekurzivne jsonObject: " + JSON.stringify(jsonObject))
         console.log("projdiJsonRekurzivne: " + JSON.stringify(result))
     })
 })
+

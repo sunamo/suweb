@@ -1,0 +1,19 @@
+{
+    "description": {
+        "documentName": "Name",
+        "documentType": "Excel",
+        "category": "5",
+        "systemCategory": "30",
+        "isCompressed": "Compressed",
+        "dateAndTime": "2024-02-18T14:30:25.303Z",
+        "sheetNumber": 2,
+        "placeholder": "Placement"
+    },
+    "documentSearch": {
+        "barCode": "BarCode",
+        "keywordPhrase": "KeyWords",
+        "physicalLocation": "Placement"
+    },
+    "archiveData": {},
+    "attributes": {}
+}
