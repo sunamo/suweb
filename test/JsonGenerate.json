@@ -1,5 +1,7 @@
 {
     "OBEC": {
+        "True": true,
+        "False": false,
         "UrlPath": "",
         "IdGuid": "589ff97d-5063-4f35-b4d9-57ee176826ae",
         "ShreddingDate": null,
