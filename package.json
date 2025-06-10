@@ -1,6 +1,6 @@
 {
   "name": "@sunamo/sunpm",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "Shared package for npmjs.org with methods used in more projects.",
   "main": "./lib/index.js",
   "files": [
@@ -16,6 +16,7 @@
     "test:watch": "jest --watch",
     "test": "jest --coverage",
     "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
     "run-publish": "cross-env npm version patch -f && pnpm run build && npm publish"
   },
   "repository": {
@@ -23,13 +24,9 @@
     "url": "git+https://github.com/sunamo/sunpm.git"
   },
   "license": "MIT",
-  "author": {
-    "name": "Radek Jančík",
-    "email": "sunamo@users.noreply.github.com",
-    "url": "https://github.com/sunamo"
-  },
+  "author": "Radek Jančík <sunamo@users.noreply.github.com> (https://github.com/sunamo)",
   "engines": {
-    "node": ">=20.0"
+    "node": ">=22.0"
   },
   "keywords": [
     "boilerplate",
@@ -51,7 +48,7 @@
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
     "@types/jest": "^27.5.2",
     "@types/luxon": "^3.4.2",
-    "@types/node": "^12.20.11",
+    "@types/node": "^22",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
@@ -124,5 +121,10 @@
   "dependencies": {
     "cross-env": "^7.0.3",
     "luxon": "^3.5.0"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "types": "./lib/index.d.ts"
 }
