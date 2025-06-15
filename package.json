@@ -1,13 +1,13 @@
 {
   "name": "@sunamo/sunpm",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Shared package for npmjs.org with methods used in more projects.",
   "main": "./lib/index.js",
   "files": [
     "lib/**/*"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.build.json",
+    "build": "pnpm clean && tsc --project tsconfig.build.json",
     "clean": "rm -rf ./lib/",
     "cm": "cz",
     "lint": "eslint ./src/ --fix",
@@ -17,6 +17,10 @@
     "test": "jest --coverage",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
+    "build:tsc-watch": "tsc --project tsconfig.build.json --watch",
+    "build:auto-index2": "tsx-auto-indexer --dir src --output src/index.ts --watch",
+    "build:auto-index": "barrelsby -d src --delete",
+    "build:watch": "npm-run-all -p build:tsc-watch build:auto-index",
     "run-publish": "cross-env npm version patch -f && pnpm run build && npm publish"
   },
   "repository": {
@@ -47,6 +51,7 @@
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
     "@types/jest": "^27.5.2",
+    "@types/jsdom": "^21.1.7",
     "@types/luxon": "^3.4.2",
     "@types/node": "^22",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
@@ -64,11 +69,6 @@
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
     "typescript": "^4.2.4"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/@ryansonshine/cz-conventional-changelog"
-    }
   },
   "lint-staged": {
     "*.ts": "eslint --cache --cache-location .eslintcache --fix"
@@ -119,8 +119,12 @@
     ]
   },
   "dependencies": {
+    "@baudevs/tsx-auto-indexer": "^1.0.6",
+    "barrelsby": "^2.8.1",
     "cross-env": "^7.0.3",
-    "luxon": "^3.5.0"
+    "jsdom": "^26.1.0",
+    "luxon": "^3.5.0",
+    "npm-run-all": "^4.1.5"
   },
   "directories": {
     "lib": "lib",
