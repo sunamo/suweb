@@ -1,7 +1,7 @@
 import {
   formatTimeAgoNumber,
   formatTimeAgoDate,
-} from "../../src/nalch/su/utils/TimeUtils";
+} from "@/nalch/su/utils/TimeUtils";
 
 describe("TimeUtils", () => {
   it("formatTimeAgoNumber should return a string", () => {

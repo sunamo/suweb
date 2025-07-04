@@ -1,4 +1,4 @@
-import { getValueAfterDelay } from "../../src/nalch/su/utils/AsyncUtils";
+import { getValueAfterDelay } from "@/nalch/su/utils/AsyncUtils";
 
 describe("AsyncUtils", () => {
   it("getValueAfterDelay should resolve after delay", async () => {

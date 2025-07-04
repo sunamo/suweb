@@ -1,4 +1,4 @@
-import { formatStringTS } from "../../src/nalch/su/utils/SHFormat";
+import { formatStringTS } from "@/nalch/su/utils/SHFormat";
 
 describe("SHFormat", () => {
   it("should format string with arguments", () => {

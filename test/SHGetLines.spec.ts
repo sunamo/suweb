@@ -1,4 +1,4 @@
-import { getLines } from "../../src/nalch/su/utils/SHGetLines";
+import { getLines } from "@/nalch/su/utils/SHGetLines";
 
 describe("SHGetLines", () => {
   it("should split string by newline", () => {

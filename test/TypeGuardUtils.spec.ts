@@ -1,4 +1,4 @@
-import { isBoolean } from "../../src/nalch/su/utils/TypeGuardUtils";
+import { isBoolean } from "@/nalch/su/utils/TypeGuardUtils";
 
 describe("TypeGuardUtils", () => {
   it("isBoolean should return true for booleans", () => {

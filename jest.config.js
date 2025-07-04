@@ -7,6 +7,9 @@ module.exports = {
     "!<rootDir>/src/types/**/*.ts",
   ],
   moduleDirectories: ["node_modules", "src"],
+  moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/src/$1",
+  },
   globals: {
     "ts-jest": {
       diagnostics: false,

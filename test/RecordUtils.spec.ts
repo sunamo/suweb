@@ -1,4 +1,4 @@
-import { SetOrAdd } from "../../src/nalch/su/utils/RecordUtils.js";
+import { SetOrAdd } from "@/nalch/su/utils/RecordUtils";
 
 describe("RecordUtils", () => {
   it("SetOrAdd should set or add a key-value pair", () => {
