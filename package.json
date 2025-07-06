@@ -1,6 +1,6 @@
 {
   "name": "@sunamo/suweb",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Shared package for npmjs.org with methods used in more projects.",
   "main": "./lib/index.js",
   "files": [
@@ -9,7 +9,7 @@
   "scripts": {
     "Build: ": "",
     "build": "pnpm clean && tsc --project tsconfig.build.json",
-    "build:watch": "npm-run-all -p build:tsc-watch build:auto-index",
+    "build:watch": "npm-run-all -p build:tsc-watch barrels:watch",
     "typecheck": "tsc --noEmit",
     "build:tsc-watch": "tsc --project tsconfig.build.json --watch",
     "Tests: ": "",
