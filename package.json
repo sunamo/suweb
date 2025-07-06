@@ -89,7 +89,7 @@
   },
   "release": {
     "branches": [
-      "main"
+      "master"
     ],
     "plugins": [
       [
@@ -128,8 +128,7 @@
           }
         }
       ],
-      "@semantic-release/npm",
-      "@semantic-release/github"
+      "@semantic-release/npm"
     ]
   },
   "dependencies": {
