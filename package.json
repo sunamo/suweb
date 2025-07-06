@@ -20,6 +20,10 @@
     "build:tsc-watch": "tsc --project tsconfig.build.json --watch",
     "build:auto-index2": "tsx-auto-indexer --dir src --output src/index.ts --watch",
     "build:auto-index": "barrelsby -d src --delete",
+    "barrels": "node ./.scripts/generate-barrels.js",
+    "release": "semantic-release",
+    "barrels:watch": "barrelsby --config .barrelsby.json --no-default-export --watch",
+    "barrels:generate": "barrelsby --config .barrelsby.json --no-default-export --delete",
     "build:watch": "npm-run-all -p build:tsc-watch build:auto-index",
     "run-publish": "cross-env npm version patch -f && pnpm run build && npm publish"
   },
@@ -51,6 +55,10 @@
   },
   "homepage": "https://github.com/sunamo/suweb#readme",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^11.0.2",
+    "@semantic-release/release-notes-generator": "^12.1.0",
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
     "@types/jest": "^30.0.0",
