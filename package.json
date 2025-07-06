@@ -7,23 +7,22 @@
     "lib/**/*"
   ],
   "scripts": {
+    "Build: ": "",
     "build": "pnpm clean && tsc --project tsconfig.build.json",
+    "build:watch": "npm-run-all -p build:tsc-watch build:auto-index",
+    "typecheck": "tsc --noEmit",
+    "build:tsc-watch": "tsc --project tsconfig.build.json --watch",
+    "Tests: ": "",
+    "test:watch": "jest --watch",
+    "test": "jest",
+    "Other: ": "",
+    "format": "prettier --write .",
     "clean": "rm -rf ./lib/",
     "lint": "eslint ./src/ --fix",
     "prepare": "husky",
-    "test:watch": "jest --watch",
-    "test": "jest",
-    "typecheck": "tsc --noEmit",
-    "format": "prettier --write .",
-    "build:tsc-watch": "tsc --project tsconfig.build.json --watch",
-    "build:auto-index2": "tsx-auto-indexer --dir src --output src/index.ts --watch",
-    "build:auto-index": "barrelsby -d src --delete",
     "barrels": "node ./.scripts/generate-barrels.js",
     "release": "semantic-release --no-ci",
-    "barrels:watch": "barrelsby --config .barrelsby.json --no-default-export --watch",
-    "barrels:generate": "barrelsby --config .barrelsby.json --no-default-export --delete",
-    "test:cov": "jest --coverage --coverageReporters=\"json-summary\"",
-    "build:watch": "npm-run-all -p build:tsc-watch build:auto-index"
+    "test:cov": "jest --coverage --coverageReporters=\"json-summary\""
   },
   "repository": {
     "type": "git",
