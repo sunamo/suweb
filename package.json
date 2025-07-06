@@ -1,6 +1,6 @@
 {
   "name": "@sunamo/suweb",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "Shared package for npmjs.org with methods used in more projects.",
   "main": "./lib/index.js",
   "files": [

@@ -1,4 +1,4 @@
-// Main entry point for suweb package
+// Main entry point for suweb package - v1.0.22
 export * from "./FS";
 export * from "./JsonGenerate";
 export * from "./JsonStringifySanitizers";
