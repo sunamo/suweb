@@ -1,6 +1,6 @@
 # suweb
 
-[![CI/CD](https://img.shields.io/badge/CI%2FCD-pending-yellow)](https://github.com/actions) [![Tests](https://img.shields.io/badge/tests-37%2F37%20passed-green)](...) [![Coverage](https://img.shields.io/badge/coverage-14%25-red)](...) [![NPM Version](https://img.shields.io/npm/v/suweb.svg)](https://www.npmjs.com/package/suweb) [![License](https://img.shields.io/npm/l/suweb.svg)](./LICENSE)
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-pending-yellow)](https://github.com/actions) [![Tests](https://img.shields.io/badge/tests-37%2F37%20passed-green)](...) [![Coverage](https://img.shields.io/badge/coverage-47.02%25-red
 
 A TypeScript utility library for working with JSON, data, strings, time, and other common operations. Suitable for use in both Node.js and browser projects.
 
