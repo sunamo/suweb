@@ -1,3 +1,4 @@
+// ESLint configuration for suweb package
 const js = require("@eslint/js");
 const tseslint = require("typescript-eslint");
 
