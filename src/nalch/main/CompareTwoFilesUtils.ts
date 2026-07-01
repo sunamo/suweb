@@ -7,3 +7,5 @@
 //   fs.writeFile(bp + "1.txt", content1);
 //   fs.writeFile(bp + "2.txt", content2);
 // };
+
+export {};
