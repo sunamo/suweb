@@ -12,7 +12,7 @@ export const joinPath = (...parts: string[]): string => {
   return parts
     .map((p, i) => {
       const s = p.replace(re, sep);
-      return i === 0 ? s.replace(new RegExp(`[/\\\\]+$`), "") : s.replace(new RegExp(`^[/\\\\]+|[/\\\\]+$`), "");
+      return i === 0 ? s.replace(new RegExp("[/\\\\]+$"), "") : s.replace(new RegExp("^[/\\\\]+|[/\\\\]+$"), "");
     })
     .filter((p) => p.length > 0)
     .join(sep);
