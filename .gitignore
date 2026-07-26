@@ -123,3 +123,5 @@ dist
 # Compiled code
 lib/
 coverage
+
+*-claude*/
