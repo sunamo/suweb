@@ -4,7 +4,7 @@ type: library
 file_count: 86
 delete_recommendation_percent: 5
 generated_date: 2026-09-30
-generated_time: 16:38:06
+generated_time: 16:38:47
 github_origin: no
 github_source_url: 
 ---
@@ -17,7 +17,13 @@ Knihovna `@sunamo/suweb` pro npmjs.org s pomocnými funkcemi používanými ve v
 
 Staženo z GitHubu: **ne** — zdrojáky jsou vlastní, z cizí šablony pochází jen konfigurace projektu.
 
-- Ověřeno: git remote origin = `git@github.com:sunamo/suweb.git` (vlastní repo); 63 commitů, autoři jen Radek Jancik, Radek Jančík, radek.jancik@sunamo.cz, smutekutek, sunamo.cz (žádný cizí); první commit 2022-04-02; LICENSE je v repu (viz níže); výskyty slova copyright/licence jen v: LICENSE (texty webu, i18n, glyfy fontů nebo značka šablony, ne autorská hlavička cizího kódu); odkazy na github.com v souborech: github.com/sunamo/suweb, github.com/sunamo/suweb.git; `gh search repos "sunamo suweb"` bez výsledků, ze hledání tedy nevzešel žádný kandidát na zdroj. Kandidáta na šablonu jsem určil z cizí LICENSE (Ryan Sonshine) a hashe souborů porovnal přes gh api (git/trees). Doplnění: Kostra projektu je z šablony `ryansonshine/typescript-npm-package-template`: git hash shodují soubory `LICENSE` (copyright Ryan Sonshine), `.env`, `.gitattributes`, `.husky/.gitignore`, `.vscode/launch.json` a husky hook (uložený jako `.husky/prepare-commit-msg2`) s blobem v šabloně. Zdrojáky v `src` (např. `index.ts`, `FS.ts`, `Parse.ts`) s šablonou (`src/index.ts`, `test/index.spec.ts`) shodu nemají, jde o vlastní kód. Proto je hodnota ne (šablona dodala jen konfiguraci).
+- Ověřeno: git remote origin = `git@github.com:sunamo/suweb.git` (vlastní repo), 64 commitů, autoři jen Radek Jancik, Radek Jančík, radek.jancik@sunamo.cz, smutekutek, sunamo.cz (žádný cizí), první commit 2022-04-02.
+- Ověřeno: LICENSE je v repu (viz níže); hlavičky copyright/@author v kódu nenalezeny.
+- Ověřeno: odkazy na github.com v souborech: github.com/sunamo/suweb, github.com/sunamo/suweb.git.
+- Ověřeno: `gh search repos "sunamo suweb"` bez výsledků; kandidáta na šablonu jsem určil z cizí LICENSE (Ryan Sonshine) a hashe souborů porovnal přes gh api (git/trees), viz níže.
+- Šablona: kostra projektu je z `ryansonshine/typescript-npm-package-template` (v `LICENSE` je copyright Ryan Sonshine).
+- Hash porovnání: git hash shodují `LICENSE`, `.env`, `.gitattributes`, `.husky/.gitignore`, `.vscode/launch.json` a husky hook (uložený jako `.husky/prepare-commit-msg2`) s blobem šablony.
+- Zdrojáky v `src` (`index.ts`, `FS.ts`, `Parse.ts` ad.) s šablonou shodu nemají, jde o vlastní kód.
 
 ## Doporučení ke smazání
 
