@@ -1,5 +1,5 @@
 ---
-schema_version: 4
+schema_version: 5
 type: library
 file_count: 86
 delete_recommendation_percent: 5
@@ -7,6 +7,9 @@ generated_date: 2026-09-30
 generated_time: 16:38:47
 github_origin: no
 github_source_url: 
+first_commit_date: 2022-04-02
+last_commit_date: 2026-08-22
+commit_count: 60
 ---
 
 ## Description
@@ -31,3 +34,11 @@ Doporučení ke smazání: **5 %** — nemazat, protože jde o publikovaný a ud
 
 - Balíček `@sunamo/suweb` verze 1.1.4 s 63 commity, poslední commit 2026-09-30.
 - Obsahuje testy a vlastní zdroje v `src`.
+
+## Historie commitů
+
+- První commit: 2022-04-02
+- Poslední commit: 2026-08-22
+- Celkem commitů: 60
+
+- Počítá se bez commitů, které jen generovaly RESUME.cs.md nebo README.md.
