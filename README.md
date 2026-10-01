@@ -1,5 +1,9 @@
 # suweb
 
+## Short description
+
+Knihovna `@sunamo/suweb` pro npmjs.org s pomocnými funkcemi používanými ve více projektech (JSON, parsování, čas, řetězce, náhodná data, Git utility). Je psaná v TypeScriptu, bez produkčních závislostí, s testy v Jestu a publikuje se přes semantic-release. Kostra projektu (konfigurace, licence) pochází ze šablony typescript-npm-package-template, zdrojové soubory v `src` jsou vlastní.
+
 [![CI/CD](https://img.shields.io/badge/CI%2FCD-pending-yellow)](https://github.com/actions) [![Tests](https://img.shields.io/badge/tests-37%2F37%20passed-green)](...) ![Coverage](https://img.shields.io/badge/coverage-44.16%25-red)
 
 A TypeScript utility library for working with JSON, data, strings, time, and other common operations. Suitable for use in both Node.js and browser projects.
